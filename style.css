@@ -1,0 +1,32 @@
+p#example{
+    color: gray;
+    font:12px 'Arial',sans-serif;
+}
+
+/*标签元素 :比如P元素*/
+p{
+    font-size: 1em;
+}
+
+/*有特定class 属性的所有元素单独声明样式*/
+.fineprint{
+    font-size: .8em;
+}
+
+
+/*独一无二的id属性的元素单独声明样式*/
+
+#intro{
+    font-size: 1.2em;
+}
+
+/*也可以有类似熟悉的多个元素声明样式*/
+input[type*="text"]{
+    font-size: 1.2em;
+}
+/*在现代浏览器中,甚至可以根据元素的位置声明样式*/
+
+p:first-of-type{
+    font-size: 2em;
+    font-weight: bold;
+}
